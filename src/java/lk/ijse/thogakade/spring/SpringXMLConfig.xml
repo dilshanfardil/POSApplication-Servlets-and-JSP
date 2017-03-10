@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+    <bean id="customerBusiness" class="lk.ijse.thogakade.business.custom.impl.CustomerBOImpl">
+        <constructor-arg ref="customerDAO"/>
+    </bean>
+    <bean id="customerDAO" class="lk.ijse.thogakade.dao.custom.impl.CustomerDAOImpl" scope="prototype"></bean>
+    <bean id="customerService" class="lk.ijse.thogakade.service.custom.impl.CustomerServiceImpl">
+        <constructor-arg ref="customerBusiness"/>
+    </bean>
+</beans>

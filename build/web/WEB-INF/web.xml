@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>WebServlet</servlet-name>
+        <servlet-class>lk.ijse.thogakade.servlet.WebServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerTableServlet</servlet-name>
+        <servlet-class>lk.ijse.thogakade.servlet.CustomerTableServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ItemServlet</servlet-name>
+        <servlet-class>lk.ijse.thogakade.servlet.ItemServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlaceOrderServlet</servlet-name>
+        <servlet-class>lk.ijse.thogakade.servlet.PlaceOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WebServlet</servlet-name>
+        <url-pattern>/WebServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerTableServlet</servlet-name>
+        <url-pattern>/CustomerTableServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ItemServlet</servlet-name>
+        <url-pattern>/ItemServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlaceOrderServlet</servlet-name>
+        <url-pattern>/PlaceOrderServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

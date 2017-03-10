@@ -1,0 +1,45 @@
+h1 {
+    color: #FFF;
+    font-family: cursive;
+}
+
+h4 {
+    color: #FFF;
+    font-family: cursive;
+}
+
+#m1 {
+    font-size: 52px;
+    color: #F00;
+    background-color: #FFF;
+    
+}
+
+.c1 {
+    cursor: pointer;
+    animation: ease-out;
+    color: #0F3 !important;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #009;
+}
+
+
+/*.row:hover {
+    background-color: #963;
+}*/
+
+.row2 {
+    background-color: #0C0;
+}
+/*#item{
+    display: none;    
+}
+#customer{
+    display: block;
+}*/

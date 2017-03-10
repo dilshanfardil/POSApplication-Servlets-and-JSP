@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+">
+
+    <context:annotation-config/>
+    <!--Business-->
+    <bean id="customerBusiness" class="lk.ijse.thogakade.business.custom.impl.CustomerBOImpl" scope="prototype"></bean>
+    <bean id="itemBusiness" class="lk.ijse.thogakade.business.custom.impl.ItemBOImpl" scope="prototype"></bean>
+    <bean id="orderBusiness" class="lk.ijse.thogakade.business.custom.impl.OrderBOImpl" scope="prototype"></bean>
+    <!--DAO-->
+    <bean id="customerDAO" class="lk.ijse.thogakade.dao.custom.impl.CustomerDAOImpl" scope="prototype"></bean>
+    <bean id="itemDAO" class="lk.ijse.thogakade.dao.custom.impl.ItemDAOImpl" scope="prototype"></bean>
+    <bean id="orderDAO" class="lk.ijse.thogakade.dao.custom.impl.OrderDAOImpl" scope="prototype"></bean>
+    <bean id="orderDetailDAO" class="lk.ijse.thogakade.dao.custom.impl.OrderDetailDAOImpl" scope="prototype"></bean>
+    <!--service-->
+    <bean id="customerService" class="lk.ijse.thogakade.service.custom.impl.CustomerServiceImpl" scope="prototype"></bean>
+    <bean id="itemService" class="lk.ijse.thogakade.service.custom.impl.ItemServiceImpl" scope="prototype"></bean>
+    <bean id="orderService" class="lk.ijse.thogakade.service.custom.impl.OrderServiceImpl" scope="prototype"></bean> 
+</beans>
